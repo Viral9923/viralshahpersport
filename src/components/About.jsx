@@ -8,7 +8,7 @@ export default function About() {
 
           <div className="col-md-4 text-center">
             <img
-              src="/images/profile.png"
+              src="public/images/profile.jpg"
               className="img-fluid rounded-circle profile-img"
             />
           </div>
