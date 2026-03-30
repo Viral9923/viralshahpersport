@@ -1,0 +1,64 @@
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+section {
+  padding: 60px;
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 20px;
+  width: 260px;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.home-section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  color: white;
+}
+
+.profile-img {
+  width: 250px;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.contact-form {
+  max-width: 500px;
+}
