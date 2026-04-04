@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-dark text-white text-center p-3">
-      © 2026 Your Name | Portfolio
+      &copy; 2026 Viral Shah , All rights reserved. 
     </footer>
   );
 }

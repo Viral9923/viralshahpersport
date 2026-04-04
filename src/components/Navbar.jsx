@@ -4,7 +4,11 @@ export default function Navbar() {
       <div className="container">
 
         <a className="navbar-brand" href="#home">
-          MyPortfolio
+          <img
+            src="/images/vslogo1.png"
+            alt="Profile Logo"
+            className="profile-img-logo rounded-circle shadow"
+          />
         </a>
 
         <button
@@ -36,6 +40,14 @@ export default function Navbar() {
 
             <li className="nav-item">
               <a className="nav-link" href="#contact">Contact</a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="/files/vsresume.pdf" target="_blank">
+                <button type="button" className="btn btn-info"> 
+                  <strong>Resume</strong>
+                </button>
+              </a>
             </li>
 
           </ul>

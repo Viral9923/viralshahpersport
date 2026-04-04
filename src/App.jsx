@@ -4,25 +4,38 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ComingSoon from "./components/ComingSoon";
 
-function App() {
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
+export default function App() {
+
   return (
-    <>
+    <Router>
       <Navbar />
-
-      <Home />
-
-      <About />
-
-      <Projects />
-
-      <Contact />
-
-      <Footer />
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <About />
+              <Projects />
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/coming-soon"
+          element={<ComingSoon />}
+        />
+      </Routes>
+    </Router>
   );
 }
-
-export default App
 
 

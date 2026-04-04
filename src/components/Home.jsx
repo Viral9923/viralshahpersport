@@ -3,19 +3,16 @@ export default function Home() {
     <section id="home" className="home-section text-center">
 
       <div className="container">
-
-        <h1>Hello, I'm Your Name 👋</h1>
-
+        <h1>Hello, I am Viral Shah 👋</h1>
         <p className="lead">
-          Full Stack Developer | React | Node | PostgreSQL
+          Full Stack Developer | Web Designer | Data Analyst & Management
         </p>
 
         <a href="#projects" className="btn btn-primary mt-3">
-          View My Work
+          Check my Work 
         </a>
 
       </div>
-
     </section>
   );
 }

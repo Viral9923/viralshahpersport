@@ -3,31 +3,41 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <section id="projects" className="py-5 bg-light">
-
       <div className="container">
-
         <h2 className="text-center mb-4">Projects</h2>
-
         <div className="row">
-
           <ProjectCard
             image="/images/project1.png"
-            title="Portfolio Website"
-            description="Built using React and Bootstrap"
-            link="https://github.com"
+            title="Fancy Threading Salon"
+            description="Built using HTML, CSS, JS"
+            link="https://www.fancythreadingsalon.com"
+            target="_blank"
           />
 
           <ProjectCard
             image="/images/project2.png"
-            title="CRUD Application"
-            description="Full stack CRUD using PERN"
-            link="https://github.com"
+            title="Lonni Gallagher Wellness"
+            description="Built using Web technology"
+            link="https://lgwellness.github.io"
+            target="_blank"
           />
 
+          <ProjectCard
+            image="/images/project2.png"
+            title="Marks Tree Service"
+            description="Built using Web Technology"
+            link="coming-soon"
+          />
+
+         <ProjectCard
+          image="/images/project2.png"
+          title="Keller Property Management"
+          description="Built using Web Technology"
+          link="coming-soon"
+        />
+
         </div>
-
       </div>
-
     </section>
   );
 }

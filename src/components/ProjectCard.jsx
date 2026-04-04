@@ -1,29 +1,49 @@
-export default function ProjectCard({ image, title, description, link }) {
+import { Link } from "react-router-dom";
+
+export default function ProjectCard({
+  image,
+  title,
+  description,
+  link
+}) {
+
+  const isComingSoon =
+    link === "coming-soon";
+
   return (
-    <div className="col-md-4">
 
-      <div className="card shadow project-card">
-
-        <img src={image} className="card-img-top" />
-
-        <div className="card-body">
-
-          <h5 className="card-title">{title}</h5>
-
-          <p className="card-text">{description}</p>
-
-          <a
-            href={link}
-            target="_blank"
-            className="btn btn-outline-primary"
-          >
-            View Project
-          </a>
-
+    <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
+      <div className="card h-100 shadow-sm">
+        <img
+          src={image}
+          className="card-img-top project-img"
+          alt={title}
+        />
+        <div className="card-body text-center">
+          <h5>{title}</h5>
+          <p>{description}</p>
+          {
+            isComingSoon ?
+              <Link
+                to="/coming-soon"
+                className="btn btn-secondary"
+              >
+                Coming Soon
+              </Link>
+            :
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-dark"
+              >
+                View Project
+              </a>
+          }
         </div>
-
       </div>
-
     </div>
+
   );
+
 }
