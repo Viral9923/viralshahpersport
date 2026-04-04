@@ -24,8 +24,11 @@ export default function App() {
             <>
               <Home />
               <About />
+              <div className="section-divider-green"></div>
               <Projects />
+              <div className="section-divider-green"></div>
               <Contact />
+              <Footer />
             </>
           }
         />
