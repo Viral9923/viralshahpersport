@@ -31,7 +31,7 @@ export default function Projects() {
             image="/images/project2.png"
             title="Marks Tree Service"
             description="Built using Web Technology"
-            link="coming-soon"
+            link="http://www.marktreeservices.com"
           />
 
           <ProjectCard
